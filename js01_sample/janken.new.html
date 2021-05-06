@@ -63,6 +63,12 @@ $('#intro_text').hide();
   let player_hp=100;
   
 $('#code_btn').on('click',function(){
+  if(cp_hp<=0){
+  $('#achieve').text('課題達成!');
+}
+if(player_hp<=0){
+  $('#achieve').text('GAME OVER!');
+}
   // 0から2はランダムな数を作る。
   // 0だったら課題進む 課題進捗ポイント加わる（ジャンケンでの勝ち）
   // 1だったら時間ロス 時間ポイントが減る（ジャンケンでの負け）
@@ -108,6 +114,12 @@ $('#result2').html(view);
 // let cp_hp =100;
 //   let player_hp=100;
 $('#search_btn').on('click',function(){
+  if(cp_hp<=0){
+  $('#achieve').text('課題達成!');
+}
+if(player_hp<=0){
+  $('#achieve').text('GAME OVER!');
+}
   // 0から2はランダムな数を作る。
   // 0だったら課題進む 課題進捗ポイント加わる（ジャンケンでの勝ち）
   // 1だったら時間ロス 時間ポイントが減る（ジャンケンでの負け）
@@ -150,6 +162,12 @@ $('#result2').html(view);
 // let cp_hp =100;
 //   let player_hp=100;
 $('#advice_btn').on('click',function(){
+  if(cp_hp<=0){
+  $('#achieve').text('課題達成!');
+}
+if(player_hp<=0){
+  $('#achieve').text('GAME OVER!');
+}
   // 0から2はランダムな数を作る。
   // 0だったら課題進む 課題進捗ポイント加わる（ジャンケンでの勝ち）
   // 1だったら時間ロス 時間ポイントが減る（ジャンケンでの負け）
