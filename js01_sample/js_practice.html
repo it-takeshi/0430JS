@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js練習</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+<script>
+    alert("JS HTML");
+// alert("Hell ");
+
+// console.log("Gs JS"); 
+
+const number1=100;
+const number2=200;
+const sum1=number1+number2;
+console.log(sum1);
+
+const name1="G's";
+const name2="ACADEMY";
+const sum2=name1+name2;
+console.log(sum2);
+
+const randomNumber2= Math.floor(Math.random()*5);
+    console.log(randomNumber2);
+    const randomNumber3= Math.floor(Math.random()*10);
+console.log(randomNumber3);
+
+const randomNumber4= Math.floor(Math.random()*9)+1;
+    console.log(randomNumber4);
+
+    const randomNumber5= Math.floor(Math.random()*6)+5;
+    console.log(randomNumber5);
+    const randomNumber6= Math.floor(Math.random()*(99-50+1)*6)+50;
+    console.log(randomNumber6);
+
+// Learning JS-01-05 演算子と計算
+let s1=1+1;
+    let s2=10-100;
+    let s3=3*3;
+    let s4=30/3;
+
+    console.log(s1);
+    console.log(s2);
+    console.log(s3);
+    console.log(s4);
+
+
+    let n=1;
+    n+=10;
+    n+=10;
+    alert(n);
+
+// Learning JS-01-06 if
+    const a =11;
+    
+    if(a==10){
+      alert("10だよ");
+    } else if(a==11){
+      alert("11だよ");
+    }else if(a==12){
+      alert("12だよ");
+    }else{
+      alert("それ以外");
+    }
+
+    const b =0;
+
+    if(b!=0){
+      alert("0以外です");
+    }
+
+// Learning JS-01-09 Function
+function strfnc(){
+  var str ='関数を知らない';
+alert(str);
+}
+//実行
+strfnc();
+strfnc();
+
+
+// Learning JS-01-10 引数
+
+// 『引数』とは関数に値を渡してその値を何か料理してもらうようなもの
+// 関数は共通する処理をパッケージするだけでなく
+
+function addition(a,b){
+  var total =a+b; 
+  alert(total);
+  return total;
+  // returnは関数の外に値を渡すもの
+}
+// 引数と戻り値(t=戻り値)  // 実行
+var t =addition(10,25);
+alert(t);
+
+// たし算する関数を定義
+// 今回は2つの引数をもらって
+// それに対して足した数を関数の外に持ち出そうとしている。引数の設定する。
+// 関数側で定義しないといけない。設計みたいなのもの
+function add(a1,a2){
+  var n =a1+a2;
+return n; // returnは関数の外に値を渡すもの
+}
+// 引数と戻り値(t=戻り値)
+var t =add(10,40);
+alert(t);
+
+
+// 上記の内容の応用問題
+function add(a1,a2,en){
+  if(en=='+'){
+    var n=a1+a2;
+  }
+  if(en=='-'){
+    var n =a1-a2;
+  }
+  return n;
+}
+var t =add(10,45,'+');
+alert(t);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/js_training.css">
+  <title>試し計算</title>
+</head>
+
+<body>
+  <header>
+    <h1>計算</h1>
+  </header>
+<main>
+    <ul>
+      <li id="time"></li>
+    </ul>
+    <p id="lesson"></p>
+    <p id="total"></p>
+  </main>
+  <footer>フッター</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+
+    $('#time').on('click',function(){
+    
+      // 乱数（1〜5）
+          const r = Math.ceil(Math.random()*5);
+      // if 分岐処理
+          let view ='';
+          let win=0;
+          let lose=0;
+          let total=win+lose;
+
+
+          if(r==1){
+            $("#lesson").text(win +=1);
+            $("#total").text(total+=2);
+            view='大吉';
+          }
+
+          if(r==2){
+            $("#lesson").text(win +=2);
+            $("#total").text(total+=3);
+            view='中吉';
+          }
+          if(r==3){
+            $("#lesson").text(win +=3);
+            $("#total").text(total+=4);
+            view='小吉';
+          }
+          if(r==4){
+            $("#lesson").text(win +=4);
+            $("#total").text(total+=5);
+            view='吉';
+          }
+          if(r==5){
+            $("#lesson").text(win +=5);
+            $("#total").text(total+=1);
+            view='凶';
+          }
+      // 表示処理
+      // $('#lesson').html(view);
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>
+
